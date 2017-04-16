@@ -26,6 +26,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- Spring test series -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -46,12 +47,17 @@
             <artifactId>jsonassert</artifactId>
             <version>1.2.3</version>
         </dependency>
-        <!-- remove jar from embed tomcat which would cause conflict if the application is going to deploy on the outside web container -->
+        <!-- Spring Boot Starter Mail dependency -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
+            <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
+        <!-- remove jar from embed tomcat which would cause conflict if the application is going to deploy on the outside web container -->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>
